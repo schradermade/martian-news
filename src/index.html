@@ -7,36 +7,27 @@
   <title>EPIC - Earth Polychromatic Imaging Camera</title>
 </head>
 <body>
-  <p id="title">EPIC Imaging</h1>
-  <p><strong>The EPIC API provides information on the daily imagery collected by DSCOVR's 
-    Earth Polychromatic Imaging Camera (EPIC) instrument. Uniquely positioned at 
-    the Earth-Sun Lagrange point, EPIC provides full disc imagery of the Earth and 
-    captures unique perspectives of certain astronomical events such as lunar transits 
-    using a 2048x2048 pixel CCD (Charge Coupled Device) detector coupled to a 30-cm 
-    aperture Cassegrain telescope.</strong></p>
+  <p id="title">Photos from the Mars Rover</h1>
+  <p><strong>Search photos from NASA's Curiousity, Opportunity, and Spirit Rovers. Select a date to see photos from that date!</strong></p>
   <div class="container">
   <form id="formOne">
     <div class="form-group">
     <label for="date">Date of Imaging:</label>
     <input id="date" class="form-control" type="date">
     </div>
-    <div class="form-group">
-      <label for="img-quality">Which type of image would you like to view?</label>  
-      <select class="form-control" id="img-quality">
-        <option value="enhanced">Enhanced</option>
-        <option value="natural">Natural</option>
-      </select>
-    </div>
-    <div class="form-group">
+    <!-- <div class="form-group">
     <label for="longitude">Longitude:</label>
     <input id="longitude" class="form-control" type="text">
     </div>
     <div class="form-group">
     <label for="latitude">Latitude:</label>
     <input id="latitude" class="form-control" type="text">
-    </div>
-    <button type="button">Submit</button>
+    </div> -->
+    <button type="submit" id="button">Submit</button>
   </form>
+  <br>
+  <div class="show-rover"></div>
+  <br>
   <div class="show-image"></div>
   <div class="show-errors"></div>
 </div>
